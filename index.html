@@ -15,15 +15,21 @@
     <h1>Michael Merlo</h1>
   </header>
   <body>
-<nav>
-  <a href='#'>Home</a>
-  <a href='#'>Skills</a>
-  <a href='#'>Projects</a>
 
-</nav>
     <div class='profile'>
       <img class='personalPhoto' src='images/personalPhoto.jpg' />
-      <div class='skillsBox'>
+      <div class='brand'>
+      <p>
+        A full stack web developer, constantly looking expanding my knowledge of technologies while looking for innovative ways to solve a problem.</br> As Thomas A. Edison said " There's a way to do it better- find it."
+      </p>
+      </div>
+      <nav id='buttonHolder'>
+        <button class='NavButton'><a href='#'>Home</a></button>
+        <button id='skillsButton' class='NavButton'><a href='#'>Skills</a></button>
+        <button id='ProjectsButton' class='NavButton'><a href='#'>Projects</a></button>
+
+      </nav>
+      <div class='skillsBox' style='display:none'>
          <h3>Skills</h3>
          <h4>Front-End</h4><p>
            AngularJS, Javascript, HTML, CSS, jQuery, EJS
@@ -38,10 +44,14 @@
            Git, Github,
          </p>
       </div>
-      <div class='contactBox'>
-        <a href='#'>Github</a>
-        <a href='#'>LinkedIn</a>
-      </div>
+      <footer>
+        <a href='#'><img class='linkImages' src='images/github.png' alt='Github' /></a>
+        <a href='#'><img class='linkImages' src='images/linkedin.png' alt='LinkedIn' /></a>
+        <p>
+        Made by Merlz in the NYC
+        </p>
+      </footer>
+
     </div>
 
 

@@ -1,5 +1,46 @@
+
+html {
+  background-image: linear-gradient(to top, #051237, #073967, #006696, #0096c3, #12c8eb);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  text-align: center;
+  /* https://mycolor.space/gradient?ori=to+top&hex=%23051237&hex2=%2312C8EB&sub=1 */
+
+
+}
+
+
+
 .personalPhoto {
   margin:25px auto;
-  width:220px;
-  height:220px;
+  width:250px;
+  height:250px;
+  border-radius: 150px;
+}
+
+.brand {
+  margin: 0 150px;
+}
+
+
+.linkImages{
+  width:60px;
+  height:60px;
+}
+
+
+footer {
+  margin-top: 100px;
+  color:ghostWhite;
+}
+
+nav {
+  margin-top: 35px;
+  margin-left, margin-right: 50px;
+}
+button {
+  margin: 0 15px;
 }
