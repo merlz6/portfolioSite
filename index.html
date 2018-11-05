@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" ng-app=''>
   <head>
     <meta charset="utf-8">
     <title>My Portfolio</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
     <link rel='stylesheet' href='/css/main.css' />
-    <link href ='/js/app.js' />
+    <scripy src='/js/app.js' charset="utf-8" />
   </head>
-  <body>
+  <body ng-controller="MainController as ctrl">
   <header>
     <h1>Michael Merlo</h1>
   </header>
+
+    <!--If done in angular MVC style, home page is back design picture name, links to github and linkedIn maybe email.(or do I attach a message board and DB allow for messages ONSITE)  -->
+
+<nav ng-include="'partials/navigation.html'"></nav>
+<div ng-include="ctrl.includePath"></div>
+
+
   </body>
 </html>
