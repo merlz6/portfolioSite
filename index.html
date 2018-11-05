@@ -1,21 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" ng-app=''>
+<html lang="en" dir="ltr" ng-app='Portfolio'>
   <head>
     <meta charset="utf-8">
+    <link rel='stylesheet' href='css/main.css' />
     <title>My Portfolio</title>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
-    <link rel='stylesheet' href='/css/main.css' />
-    <scripy src='/js/app.js' charset="utf-8" />
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+    <script src='js/app.js' charset="utf-8" /></script>
   </head>
-  <body ng-controller="MainController as ctrl">
   <header>
     <h1>Michael Merlo</h1>
   </header>
+  <body>
+<nav>
+  <a href='#'>Home</a>
+  <a href='#'>Skills</a>
+  <a href='#'>Projects</a>
 
-    <!--If done in angular MVC style, home page is back design picture name, links to github and linkedIn maybe email.(or do I attach a message board and DB allow for messages ONSITE)  -->
-
-<nav ng-include="'partials/navigation.html'"></nav>
-<div ng-include="ctrl.includePath"></div>
+</nav>
+    <div class='profile'>
+      <img class='personalPhoto' src='images/personalPhoto.jpg' />
+      <div class='skillsBox'>
+         <h3>Skills</h3>
+         <h4>Front-End</h4><p>
+           AngularJS, Javascript, HTML, CSS, jQuery, EJS
+         </p>
+         <h4>Back-End</h4><p>
+           ExpressJS, Ruby
+         </p>
+         <h4>Database</h4><p>
+           MongoDB, Mongoose, SQL,
+         </p>
+         <h4>Other:</h4><p>
+           Git, Github,
+         </p>
+      </div>
+      <div class='contactBox'>
+        <a href='#'>Github</a>
+        <a href='#'>LinkedIn</a>
+      </div>
+    </div>
 
 
   </body>
