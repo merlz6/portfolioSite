@@ -1,59 +1,99 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" ng-app='Portfolio'>
-  <head>
-    <meta charset="utf-8">
-    <link rel='stylesheet' href='css/main.css' />
-    <title>My Portfolio</title>
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
 
-    <script src='js/app.js' charset="utf-8" /></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <link rel='stylesheet' href='css/main.css' />
+  <title>Michael Merlo</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <script src='js/app.js' charset="utf-8" />
+  </script>
+</head>
+
+<body ng-controller='MainController as ctrl'>
   <header>
     <h1>Michael Merlo</h1>
-  </header>
-  <body>
+    <nav id='buttonHolder'>
+      <button ng-click='ctrl.toggleShowPicture()' class='NavButton'><a href='#'>Home</a></button>
+      <button id='skillsButton' class='NavButton' ng-click='ctrl.toggleShowSkills()'><a href='#'>Skills</a></button>
+      <button id='ProjectsButton' class='NavButton' ng-click='ctrl.toggleShowProjects()'><a href='#'>Projects</a></button>
 
-    <div class='profile'>
-      <img class='personalPhoto' src='images/personalPhoto.jpg' />
-      <div class='brand'>
+    </nav>
+  </header>
+
+  <div class='profile' ng-if='ctrl.showPicture'>
+    <img class='personalPhoto' src='images/personalPhoto.jpg' />
+    <div class='brand'>
       <p>
         A full stack web developer, constantly looking expanding my knowledge of technologies while looking for innovative ways to solve a problem.</br> As Thomas A. Edison said " There's a way to do it better- find it."
       </p>
-      </div>
-      <nav id='buttonHolder'>
-        <button class='NavButton'><a href='#'>Home</a></button>
-        <button id='skillsButton' class='NavButton'><a href='#'>Skills</a></button>
-        <button id='ProjectsButton' class='NavButton'><a href='#'>Projects</a></button>
+    </div>
+    </div>
 
-      </nav>
-      <div class='skillsBox' style='display:none'>
-         <h3>Skills</h3>
-         <h4>Front-End</h4><p>
-           AngularJS, Javascript, HTML, CSS, jQuery, EJS
-         </p>
-         <h4>Back-End</h4><p>
-           ExpressJS, Ruby
-         </p>
-         <h4>Database</h4><p>
-           MongoDB, Mongoose, SQL,
-         </p>
-         <h4>Other:</h4><p>
-           Git, Github,
-         </p>
-      </div>
-      <footer>
-        <a href='#'><img class='linkImages' src='images/github.png' alt='Github' /></a>
-        <a href='#'><img class='linkImages' src='images/linkedin.png' alt='LinkedIn' /></a>
-        <p>
-        Made by Merlz in the NYC
+    <div class='skillsBox' ng-if='ctrl.showSkills'>
+      <h3><strong>Skills</strong></h3>
+      <h4>Front-End</h4>
+      <p>
+        AngularJS, Javascript, HTML, CSS, jQuery, EJS, React
+      </p>
+      <h4>Back-End</h4>
+      <p>
+        ExpressJS, Ruby, Ruby on Rails
+      </p>
+      <h4>Database</h4>
+      <p>
+        MongoDB, MySQL, Postgres
+      </p>
+      <h4>Other:</h4>
+      <p>
+        Git, Github,
+      </p>
+    </div>
+
+    <div class='skillsBox' ng-if='ctrl.showProjects'>
+      <h3>Projects</h3>
+
+      <div class='projectBoxes'>
+
+
+      <img src='images/Scopa1.png' class='projPictures' />
+      <div class='projectBoxesText'>
+        <h4>Scopia</h4>
+        <p> My first true programming project. Scopia is an old Italian card game. Built with jQuery, HTML,
+           CSS over a five day period for General Assembly Project One.
         </p>
-      </footer>
+      </div>
 
+    </div>
+      <div class='projectBoxes'>
+
+
+
+      <img src='images/Scopa2.png' class='projPictures' />
+      <div class='projectBoxesText'>
+      <h4>Lights, Camera, Drive</h4>
+      <p> Filming a movie? Need car props, look no further!
+          Our Users list cars you just sign up and find the car you would like to use!
+          Built over a five day period at GA with my Teammates Anitha and Rick using the MEAN stack.
+      </p>
+    </div>
+    </div>
     </div>
 
 
-  </body>
+
+
+  <footer>
+    <a href='https://github.com/merlz6'><img class='linkImages' src='images/github.png' alt='Github' /></a>
+    <a href='https://www.linkedin.com/in/michael-p-merlo/'><img class='linkImages' src='images/linkedin.png' alt='LinkedIn' /></a>
+    <a href='mailto:mmerlo0317&#64gmail.com'><img class=linkImages src='images/paper-plane.png' alt='Email' /></a>
+    <p class='madeBy'>
+      Made by Merlz in the NYC
+    </p>
+    <div class='iconAck'>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  </footer>
+</body>
+
 </html>

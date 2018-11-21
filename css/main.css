@@ -1,8 +1,12 @@
 
-html {
-  background-image: linear-gradient(to top, #051237, #073967, #006696, #0096c3, #12c8eb);
-  background-repeat: no-repeat;
-  background-size: cover;
+header {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color:#25688C;
+  height: 60px;
+
 }
 
 body {
@@ -12,17 +16,19 @@ body {
 
 }
 
-
+.iconAck {
+  font-size: 10px;
+}
 
 .personalPhoto {
-  margin:25px auto;
-  width:250px;
-  height:250px;
+  margin:50px auto;
+  width:275px;
+  height:275px;
   border-radius: 150px;
 }
 
 .brand {
-  margin: 0 150px;
+  margin: 0 175px;
 }
 
 
@@ -31,16 +37,51 @@ body {
   height:60px;
 }
 
+.skillsBox {
+  margin:100px 125px;
+  border:1px solid black;
 
-footer {
-  margin-top: 100px;
-  color:ghostWhite;
 }
 
+.projPictures {
+  width:250px;
+  height:250px;
+}
+
+
+
 nav {
-  margin-top: 35px;
+
   margin-left, margin-right: 50px;
 }
 button {
-  margin: 0 15px;
+
+
+  height: 60px;
+  width:100px;
+
+}
+
+.madeBy {
+  margin:10px auto;
+}
+
+
+.projectBoxes {
+  display: flex;
+  flex-direction: row;
+  padding:5px 15px;
+}
+.projectBoxesText {
+  margin:0 50px;
+}
+footer {
+
+  position: absolute;
+  bottom:auto;
+  color:red;
+  margin-left: auto;
+  margin-right: auto;
+  left:0;
+  right:0;
 }
