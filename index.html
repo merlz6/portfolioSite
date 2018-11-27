@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
   <link rel='stylesheet' href='css/main.css' />
   <title>Michael Merlo</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
@@ -33,23 +34,24 @@
     </div>
 
     <div class='skillsBox' ng-if='ctrl.showSkills'>
-      <h3><strong>Skills</strong></h3>
-      <h4>Front-End</h4>
-      <p>
+      <h2><strong>Skills</strong></h2>
+      <h3>Front-End</h3>
+      <h5>
         AngularJS, Javascript, HTML, CSS, jQuery, EJS, React
-      </p>
+      </h5>
+
       <h4>Back-End</h4>
-      <p>
-        ExpressJS, Ruby, Ruby on Rails
-      </p>
+      <h5>
+        ExpressJS, NodeJS, Ruby, Ruby on Rails
+      </h5>
       <h4>Database</h4>
-      <p>
+      <h5>
         MongoDB, MySQL, Postgres
-      </p>
+      </h5>
       <h4>Other:</h4>
-      <p>
-        Git, Github,
-      </p>
+      <h5>
+        Git, Github
+      </h5>
     </div>
 
     <div class='skillsBox' ng-if='ctrl.showProjects'>
@@ -60,8 +62,9 @@
 
       <img src='images/Scopa1.png' class='projPictures' />
       <div class='projectBoxesText'>
-        <h4>Scopia</h4>
-        <p> My first true programming project. Scopia is an old Italian card game. Built with jQuery, HTML,
+        <h4><a href='https://merlz6.github.io/Scopa/'>Scopa</a>
+</h4>
+        <p> My first true programming project. Scopa is an old Italian card game. Players score points each round until a player reaches 11. Built with jQuery, HTML,
            CSS over a five day period for General Assembly Project One.
         </p>
       </div>
@@ -71,12 +74,12 @@
 
 
 
-      <img src='images/Scopa2.png' class='projPictures' />
+      <img src='images/LightsCameraDrive1.png' class='projPictures' />
       <div class='projectBoxesText'>
-      <h4>Lights, Camera, Drive</h4>
+      <h4><a href='https://lights-camera-drive.herokuapp.com/'>Lights, Camera, Drive</a></h4>
       <p> Filming a movie? Need car props, look no further!
           Our Users list cars you just sign up and find the car you would like to use!
-          Built over a five day period at GA with my Teammates Anitha and Rick using the MEAN stack.
+          Built over a five day period at GA with my Teammates Anitha and Rick. Technologies used were MongoDB, ExpressJS, AngularJS, NodeJS
       </p>
     </div>
     </div>

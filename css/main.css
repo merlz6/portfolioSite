@@ -4,15 +4,26 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color:#25688C;
+
   height: 60px;
 
+}
+
+header > h1 {
+  font-size: 32px;
+  color:ghostWhite;
+  margin-left: 15px;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+h3, h4 {
+  font-family: 'Black Han Sans', sans-serif;
 }
 
 body {
   text-align: center;
   /* https://mycolor.space/gradient?ori=to+top&hex=%23051237&hex2=%2312C8EB&sub=1 */
-
+  background-image: url('https://nit.pt/wp-content/uploads/2017/12/3ad3efcd78bfce6c03faab9f420731bf.jpg');
 
 }
 
@@ -28,9 +39,19 @@ body {
 }
 
 .brand {
-  margin: 0 175px;
+  margin: 0 260px;
+  background-color: lightGrey;
+  opacity: .65;
+  border-radius: 10px;
+  padding:3px;
+  margin-bottom:25px;
+  font-size: 18px;
+  font-weight: 600;
+  border:4px solid ghostWhite;
 }
-
+p {
+  opacity: 1;
+}
 
 .linkImages{
   width:60px;
@@ -38,8 +59,10 @@ body {
 }
 
 .skillsBox {
-  margin:100px 125px;
-  border:1px solid black;
+  margin:100px 150px;
+  border:4px solid ghostWhite;
+  background-color: lightGrey;
+  border-radius: 10px;
 
 }
 
@@ -48,6 +71,17 @@ body {
   height:250px;
 }
 
+.NavButton {
+  border-radius: 15px;
+  margin: 5px 5px;
+
+}
+
+.NavButton > a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Black Han Sans', sans-serif;
+}
 
 
 nav {
@@ -71,12 +105,13 @@ button {
   display: flex;
   flex-direction: row;
   padding:5px 15px;
+  margin-top: 10px;
 }
 .projectBoxesText {
   margin:0 50px;
 }
 footer {
-
+font-family: 'Black Han Sans', sans-serif;
   position: absolute;
   bottom:auto;
   color:red;
