@@ -110,10 +110,14 @@ button {
 .projectBoxesText {
   margin:0 50px;
 }
+
+/* footer stay by: https://stackoverflow.com/questions/6127621/keeping-footer-at-the-bottom-of-window-on-site-that-scrolls-horizontal */
 footer {
 font-family: 'Black Han Sans', sans-serif;
-  position: absolute;
-  bottom:auto;
+background-attachment: scroll;
+ background-position: 0% 0%;
+ position: fixed;
+ bottom: 0pt;
   color:red;
   margin-left: auto;
   margin-right: auto;
