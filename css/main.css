@@ -63,6 +63,8 @@ p {
   border:4px solid ghostWhite;
   background-color: lightGrey;
   border-radius: 10px;
+  height:400px;
+  overflow: scroll;
 
 }
 
